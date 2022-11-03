@@ -1,5 +1,5 @@
-import usuariosModel from "../models/usuariosModel";
-import databaseUsuarios from "../DAO/databaseUsuarios";
+import usuariosModel from "../models/usuariosModel.js";
+import databaseUsuarios from "../DAO/databaseUsuarios.js";
 
 databaseUsuarios.criarTabelaUsuarios();
 
@@ -46,7 +46,7 @@ class Usuarios {
                 const usuario = new usuariosModel(...Object.values(req.body));
                 const resposta = await databaseUsuarios.atualizarUsuarioPorId(req.params.id, usuario);
                 res.status(200).json(resposta);
-            }catch (error) {
+            } catch (error) {
                 res.status(400).json(error.message);
               }
         });
@@ -60,8 +60,7 @@ class Usuarios {
                 }
                 const usuario = await databaseUsuarios.deletarUsuarioPorId(req.params.id);
                 res.status(200).json(usuario);
-            }catch (error) {
-                console.log(error);
+            }catch (error) {    
                 res.status(404).json({ Error: error.message });
               }
         });

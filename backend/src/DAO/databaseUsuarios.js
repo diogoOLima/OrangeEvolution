@@ -1,17 +1,16 @@
-import DAO from "./DAO";
+import DAO from "./DAO.js";
 
 class databaseUsuarios extends DAO {
 
     static async criarTabelaUsuarios() {
         const query = `CREATE TABLE IF NOT EXISTS usuarios(
-                        id INTEGER PRIMARY KEY AUTOINCREMENT
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
                         usuario VARCHAR,
                         senha VARCHAR,
                         isAdmin BIT NOT NULL
-
                         )`;
         const resposta = await this.criarTabela(query);
-        return resposta
+        return resposta;
     }
 
     static async inserirUsuario(usuario) {

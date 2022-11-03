@@ -1,4 +1,4 @@
-import Database from "../infra/database";
+import Database from "../infra/database.js";
 
 class DAO {
     static async activePragma(){
@@ -15,12 +15,13 @@ class DAO {
 
     static criarTabela(query) {
         this.activePragma();
-        return new Promise ((resolve, reject)=> {
+        return new Promise((resolve, reject) => {
             Database.run(query, (err) => {
                 if(err) {
-                    reject(err.message)
+                    reject(err.message) ;
+                    console.log("erro criacao de tabela");
                 } else {
-                    resolve("Tabela criada com sucesso.")
+                    resolve("Tabela criada com sucesso.");
                 }
             })
         })
@@ -53,9 +54,9 @@ class DAO {
       }
       static listarPorId(id, query) {
         return new Promise((resolve, reject) => {
-          Database.get(query, id, (e, resultado) => {
-            if (e) {
-              reject(e.message);
+          Database.get(query, id, (err, resultado) => {
+            if (err) {
+              reject(err.message);
             } else {
               return resolve(resultado);
             }
@@ -64,9 +65,9 @@ class DAO {
       }
       static deletarPorId(id, query) {
         return new Promise((resolve, reject) => {
-          Database.run(query, id, (e) => {
-            if (e) {
-              reject(e.message);
+          Database.run(query, id, (err) => {
+            if (err) {
+              reject(err.message);
             } else {
               resolve({
                 erro: false,
@@ -81,8 +82,8 @@ class DAO {
         const body = Object.values(entidade);
         return new Promise((resolve, reject) => {
           Database.run(query, [...body, id], (e) => {
-            if (e) {
-              reject(e.message);
+            if (err) {
+              reject(err.message);
             } else {
               resolve({message: `ID ${id} atualizado com sucesso.`});
             }
