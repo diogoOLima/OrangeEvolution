@@ -10,7 +10,7 @@
 </head>
 <body>
     <h2>Faça o login</h2>
-    <form method="post">
+    <form>
         <p>
             <label for="ilogin">Login: </label>
             <input type="text" name="login" id="ilogin">
@@ -19,10 +19,9 @@
             <label for="ipassword">Senha: </label>
             <input type="password" name="password" id="ipassword">
         </p>
-        <button onclick="getUsers()" id="send">Entrar</button>
-        <!-- <input type="submit" name="acao" value="Entrar" id="send"> -->
+        <input type="submit" name="acao" value="Entrar" id="send" onclick="getUsers()">
     </form>
     
-    <div id="renderResults" ></div>
+    <div id="renderResults"></div>
 </body>
 </html>
