@@ -8,15 +8,20 @@ function getUsers(){
             const login = document.querySelector('#ilogin').value
             const password = document.querySelector('#ipassword').value
             
+            var userFound = false
             data.forEach(element => {
                 if(login == element.login && password == element.password){
+                    userFound = true
                     if(element['isAdmin'] == 1){
-                        alert("admin")
+                        location.href = "adminPage.html"
                     }else{
-                        alert("user")
+                        location.href = "userPage.html"
                     }
 
                 }
-             });
+            });
+            if(!userFound){
+                alert("Login e/ou senha inválidos")
+            }
         })
 }
