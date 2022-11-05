@@ -16,10 +16,10 @@ class Trilhas {
         app.get("/trilhas/:id", async(req, res) => {
             try {
                 const trilhas = await databaseTrilhas.listarTrilhasPorId(req.params.id);
-                if(!usuario) {
+                if(!trilhas) {
                     throw new Error("Trilha não encontrado para este Id!")
                 }
-                res.status(200).json(usuario);
+                res.status(200).json(trilhas);
             } catch(error) {
                 res.status(404).json(error.message);
             }
