@@ -29,12 +29,12 @@ class databaseTrilhas extends DAO {
         return resposta;
       }
       static async deletarTrilhaPorId(id) {
-        const query = `DELETE FROM usuarios WHERE trilha_id = ?`;
+        const query = `DELETE FROM trilhas WHERE trilha_id = ?`;
         const resposta = await this.deletarPorId(id, query);
         return resposta;
       }
       static async atualizarTrilhaPorId(id, trilha) {
-        const query = `UPDATE usuarios
+        const query = `UPDATE trilhas
         SET nomeTrilha = ?,
              tipoTrilha = ?,
             WHERE trilha_id = ?`;

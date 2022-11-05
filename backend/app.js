@@ -2,6 +2,7 @@ import express  from "express";
 import * as dotenv from "dotenv";
 import Usuarios from './src/controllers/Usuarios.js';
 import Trilhas from "./src/controllers/Trilhas.js";
+import Aulas from "./src/controllers/Aulas.js";
 
 dotenv.config();
 
@@ -16,3 +17,4 @@ app.use(express.json());
 
 Usuarios.rotas(app);
 Trilhas.rotas(app);
+Aulas.rotas(app);
