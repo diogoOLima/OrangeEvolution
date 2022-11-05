@@ -32,7 +32,7 @@ class Aulas {
                 const resposta = await databaseAulas.inserirAula(aulas);
                 res.status(201).json(resposta);
             } catch(error) {
-                res.status(400).json(error.message)
+                res.status(400).json(error.message);
             }
         });
 

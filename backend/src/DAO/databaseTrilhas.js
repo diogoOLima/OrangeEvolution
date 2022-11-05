@@ -24,7 +24,7 @@ class databaseTrilhas extends DAO {
         return resposta;
       }
       static async listarTrilhasPorId(id) {
-        const query = `SELECT * FROM trilhas WHERE id = ?`;
+        const query = `SELECT * FROM trilhas WHERE trilha_id = ?`;
         const resposta = await this.listarPorId(id, query);
         return resposta;
       }

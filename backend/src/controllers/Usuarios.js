@@ -8,8 +8,14 @@ class Usuarios {
     //listar todos usuarios
     static rotas(app) {                                  
         app.get("/usuarios", async (req, res)=>{
-            const resposta = await databaseUsuarios.listarTodosUsuarios();
-            res.status(200).json(resposta)
+            try {
+                const resposta = await databaseUsuarios.listarTodosUsuarios();
+                res.status(200).json(resposta);
+            } catch(error) {
+                res.status(404).json(error.message);
+                console.log("erro em get")
+            }
+            
         });
 
         //listar por id
