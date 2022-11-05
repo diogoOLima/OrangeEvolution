@@ -1,6 +1,7 @@
 import express  from "express";
 import * as dotenv from "dotenv";
 import Usuarios from './src/controllers/Usuarios.js';
+import Trilhas from "./src/controllers/Trilhas.js";
 
 dotenv.config();
 
@@ -14,3 +15,4 @@ app.listen(porta, ()=> {
 app.use(express.json());
 
 Usuarios.rotas(app);
+Trilhas.rotas(app);

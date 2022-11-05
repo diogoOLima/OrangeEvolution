@@ -5,7 +5,7 @@ class databaseUsuarios extends DAO {
     static async criarTabelaUsuarios() {
         const query = `CREATE TABLE IF NOT EXISTS usuarios(
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        usuario UNIQUE VARCHAR NOT NULL,
+                        usuario VARCHAR UNIQUE NOT NULL,
                         senha VARCHAR,
                         isAdmin BIT NOT NULL
                         )`;
