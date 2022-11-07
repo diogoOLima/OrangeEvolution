@@ -1,0 +1,127 @@
+body{
+font-family: Montserrat;
+background-color: #CCCCCC;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 95px;
+    left: 0px;
+    top: 0px;
+    background: #04030C;
+}
+
+.cabecalhoPrincipal .container{
+    display:flex;
+    justify-content: space-between;
+    top: 30px;  
+}
+
+h1{
+    margin-left: 20px;
+}
+
+nav {
+    position: flex;
+}
+
+nav li {
+    display: inline;
+    margin:0 0 0 15px;
+    margin-right: 20px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.username{
+    position: absolute;
+    width: 246px;
+    height: 41px;
+    left: 120px;
+    top: 175px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    color:#F1F1F1
+}
+
+.username:before{
+    content:"{ ";
+    color: #00C19C;
+}
+
+.username:after{
+    content:" }";
+    color: #00C19C;  
+}
+
+
+.descricao-principal{
+    position: absolute;
+    width: 577px;
+    height: 29px;
+    left: 120px;
+    top: 240px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F1F1F1;
+}
+
+.trilhas{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 542px;
+    left: 120px;
+    top: 200px;
+}
+
+.trilha-descricao{
+    display: inline-block;
+    width:291px;
+    height: 72px;
+    margin:0 1.5%;
+    font-weight: 400;   
+    font-size: 20px;
+    line-height: 24px;
+    color: #F1F1F1;
+}
+
+.icones-trilha{
+    display:flex;
+    position: relative;
+    width: 14.4px;
+}
+
+
+.quantidade-conteudos{
+    font-size: 12px;
+    line-height: 15px
+}
+
+footer{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 314px;
+    left: 0px;
+    top: 1037px;
+    background: rgba(4, 3, 12, 0.9);
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
