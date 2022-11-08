@@ -1,6 +1,8 @@
 body{
 font-family: Montserrat;
-background-color: #CCCCCC;
+background-image: url("../images/Background\ Frame\ -\ Web.png");
+background-color: rgb(4, 11, 38);
+background-blend-mode: luminosity;
 }
 
 header{
@@ -11,6 +13,7 @@ header{
     top: 0px;
     background: #04030C;
 }
+
 
 .cabecalhoPrincipal .container{
     display:flex;
@@ -83,10 +86,10 @@ nav li {
     position:absolute;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: auto;
+    justify-content: space-around;
+    width: 1200px;
     height: 542px;
-    left: 120px;
+    left: 80px;
     top: 200px;
 }
 
@@ -95,22 +98,87 @@ nav li {
     width:291px;
     height: 72px;
     margin:0 1.5%;
+    margin-top: 20px;
     font-weight: 400;   
+    padding: 19px;
     font-size: 20px;
     line-height: 24px;
     color: #F1F1F1;
 }
 
 .icones-trilha{
+    margin-top: 10px;
     display:flex;
-    position: relative;
-    width: 14.4px;
+    position:relative;
 }
 
 
 .quantidade-conteudos{
+    display: flex;
+    position: relative;
     font-size: 12px;
     line-height: 15px
+}
+
+.card-background{
+    position: absolute;
+    background: linear-gradient(75.06deg, rgba(0, 0, 0, 0.7) 51.42%, rgba(0, 0, 0, 0) 80.56%);
+    background-blend-mode: multiply;
+    border-radius: 10px;
+}
+
+.card-icon{
+    position:relative
+    
+}
+
+.trilhas li{
+    position: relative;
+    width: 328px;
+    height: 540px;
+    left: 0px;
+    top: 149px;
+    
+    background: #001024;
+    background-blend-mode: multiply;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid;
+    border-color: #00C19C;
+}
+
+
+input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+
+    position: absolute;
+    width: 138px;
+    height: 50px;
+    left: 95px;
+    top: 442px;
+
+    background: RGB(10,74,154,1);
+    border: 2px solid #00C19C;
+    border-radius: 10px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F1F1F1
+}
+
+input:hover{
+    background-color: RGB(0,46,154,1);
+}
+
+input:active{
+    background-color: RGB(0,16,36,1);
 }
 
 footer{
