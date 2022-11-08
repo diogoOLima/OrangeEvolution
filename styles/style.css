@@ -15,7 +15,8 @@ header{
 .cabecalhoPrincipal .container{
     display:flex;
     justify-content: space-between;
-    top: 30px;  
+    top: 15px;  
+    align-items: center;
 }
 
 h1{
