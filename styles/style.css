@@ -107,17 +107,15 @@ nav li {
 }
 
 .icones-trilha{
-    margin-top: 10px;
     display:flex;
     position:relative;
+    width: 1.25em;
+    height: 1.25em;
 }
 
-
-.quantidade-conteudos{
-    display: flex;
-    position: relative;
-    font-size: 12px;
-    line-height: 15px
+.quantidade-conteudos {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .card-background{
@@ -130,6 +128,31 @@ nav li {
 .card-icon{
     position:relative
     
+}
+
+.card-informacoes {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+.card-info-coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.2em;
+}
+
+.card-info-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+}
+
+.card-p {
+    margin-left: 1.2em;
 }
 
 .trilhas li{
