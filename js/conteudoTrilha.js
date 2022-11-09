@@ -1,7 +1,8 @@
 const url = "https://orangevolution.herokuapp.com/aulas"
 const conteudos = document.querySelector('#conteudos')
-const countConcluidoDOM = document.querySelector('#countConcluido')
-countConcluidoDOM.style.color = "white"
+const infoProgressoDOM = document.querySelector('#infoProgresso')
+const progresso = document.querySelector("#barra div")
+
 
 var countConcluido = 0;
 let countAulas = 0;
@@ -42,7 +43,7 @@ function getAulas(){
 
                 })
             })
-            countConcluidoDOM.innerHTML = `${countConcluido}/${countAulas}<br>`
+            calcularProgresso()
         })
 }
 
@@ -53,14 +54,21 @@ function altStatusButton(id){
         status.textContent = "Concluido"
         status.style.backgroundColor = "green"
         countConcluido++
-        countConcluidoDOM.innerHTML = `${countConcluido}/${countAulas}<br>`
+        calcularProgresso()
     }else{
         status.textContent = "Pendente"
         status.style.backgroundColor = "red"
         countConcluido--
-        countConcluidoDOM.innerHTML = `${countConcluido}/${countAulas}<br>`
+        calcularProgresso()
     }
 
 }
+
+function calcularProgresso() {
+    let progressoAtual = (countConcluido / countAulas) * 100;
+    progresso.style.width= `${progressoAtual}%`
+    infoProgressoDOM.innerHTML = `${~~progressoAtual}% - ${countConcluido}/${countAulas}<br>`
+}
+
 
 getAulas();
