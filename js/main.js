@@ -4,7 +4,6 @@ function getUsers(){
     axios.get(url)
         .then(response => {
             const data = response.data
-            // renderResults.textContent = JSON.stringify(data)
             const login = document.querySelector('#ilogin').value
             const password = document.querySelector('#ipassword').value
             
