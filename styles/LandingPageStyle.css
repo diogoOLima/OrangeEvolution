@@ -6,6 +6,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-image: url('../images/Background-Frame\ -Web.png');
     background-blend-mode: luminosity;
     background-color: rgb(04, 11, 38);
@@ -120,7 +122,8 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     height: 19.625em;
-    background-color: rgba(4, 3, 12, 0.9);;
+    background-color: rgba(4, 3, 12, 0.9);
+    width: 100vw;
 }
 
 .fcamara {
