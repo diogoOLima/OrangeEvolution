@@ -6,9 +6,7 @@
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../images/Background\ Frame\ -\ Web.png);
+    background-image: url('../images/Background-Frame\ -Web.png');
     background-blend-mode: luminosity;
     background-color: rgb(04, 11, 38);
 }
