@@ -39,8 +39,8 @@ body {
     justify-content: center;
     border: 2px solid #00C19C;
     border-radius: 10px;
-    Width: 30.5em;
-    Height: 42.1875em;
+    width: 30.5em;
+    height: 42.1875em;
 }
 
 .rightBody input {
@@ -97,4 +97,148 @@ body {
 .register {
     color: #00C19C;
     cursor: pointer;
+}
+
+@media (max-width: 1441px) {
+    .leftBody {
+        width: 20em;
+    }
+
+    .rightBody {
+        width: 28em;
+        height: 40em;
+    }
+}
+
+@media (max-width: 1025px) {
+    .leftBody {
+        width: 18em;
+    }
+
+    .leftBody h2 {
+        font-size: 32px;
+    }
+
+    .rightBody {
+        width: 26em;
+        height: 34em;
+    }
+}
+
+
+@media (max-width: 769px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .leftBody {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7em;
+        margin-top: 0.7em;
+    }
+
+    .leftBody img {
+        height: 6em;
+        width: 6em;
+    }
+
+    .leftBody h2 {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .rightBody {
+        height: 20em;
+        width: 22em;
+        margin-bottom: 2em;
+        border: 1.34426px solid #00C19C;
+        border-radius: 6.72131px;
+    }
+
+    .rightBody input {
+        width: 17em;
+        height: 2.5625em;
+    }
+
+    .rightBody button {
+        width: 17em;
+        height: 2.5625em;
+    }
+    
+    .forgotpassword, .noAccount {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 376px) {
+
+    .leftBody img {
+        height: 5em;
+        width: 5em;
+    }
+
+    .leftBody h2 {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .rightBody {
+        height: 25em;
+    }
+
+    .rightBody input {
+        width: 12.125em;
+        height: 2.4375em;
+    }
+
+    .rightBody button {
+        width: 12.125em;
+        height: 2.4375em
+    }
+    
+    .forgotpassword, .noAccount {
+        font-size: 8.75px;
+    }
+}
+
+@media (max-width: 321px) {
+
+    .leftBody img {
+        height: 4em;
+        width: 4em;
+    }
+
+    .leftBody h2 {
+        font-size: 11px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .rightBody {
+        height: 25em;
+        width: 16em;
+    }
+
+    .rightBody input {
+        width: 12.125em;
+        height: 2.4375em;
+    }
+
+    .rightBody button {
+        width: 12.125em;
+        height: 2.4375em
+    }
+    
+    .forgotpassword, .noAccount {
+        font-size: 8.75px;
+    }
 }
