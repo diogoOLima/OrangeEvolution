@@ -51,6 +51,7 @@ header .iconLogo {
 .inicioJornada p {
     color: #FFFFFF;
     font-size: 55px;
+    text-align: center;
 }
 
 
@@ -113,4 +114,23 @@ header .iconLogo {
     font-weight: 600;
     border-radius: 10px;
     cursor: pointer; 
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 19.625em;
+    background-color: rgba(4, 3, 12, 0.9);;
+}
+
+.fcamara {
+    width: 15.625em;
+    height: 3.5em;
+}
+
+.orangejuice {
+    width: 7.5em;
+    height: 5.625em
 }
