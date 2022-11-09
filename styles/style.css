@@ -240,7 +240,6 @@ footer{
     align-items: center;
     justify-content: center;
     justify-content: space-around;
-    align-content: flex-end;
 }
 
 @media screen and (max-width:600px) {
