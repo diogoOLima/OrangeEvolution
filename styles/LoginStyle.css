@@ -72,14 +72,16 @@ body {
 }
 
 .forgotpassword {
+    width: 77%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2em;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     color: #00C19C;
-    margin-right: 12em;
-    margin-bottom: 4em;
     cursor: pointer;
 }
 
@@ -195,10 +197,6 @@ body {
         height: 25em;
     }
 
-    .rightBody input {
-        width: 12.125em;
-        height: 2.4375em;
-    }
 
     .rightBody button {
         width: 12.125em;
@@ -208,6 +206,7 @@ body {
     .forgotpassword, .noAccount {
         font-size: 8.75px;
     }
+
 }
 
 @media (max-width: 321px) {
