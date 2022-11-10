@@ -1,3 +1,4 @@
+
 body{
 font-family: Montserrat;
 background-image: url("../images/Background\ Frame\ -\ Web.png");
@@ -12,6 +13,10 @@ header{
     left: 0px;
     top: 0px;
     background: #04030C;
+}
+
+.cabeçalhoPrincipal {
+    margin: 10px 0px;
 }
 
 
@@ -241,23 +246,111 @@ div.aula{
     height: 100%;
     border-radius: 2px;
     background-color: #00C19C;
+    transition: 300ms;
+}
+
+#info-trilha {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0px;
+    margin: 20px 0px;
+    width: 90%;
+    margin: auto;
+}
+
+#info-trilha>div {
+    padding: 20px 0px;
+}
+
+#info-trilha > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #00C19C;
+    border-bottom: 2px solid #00C19C;
 }
 
 
 
 #infoProgresso {
-    color: white;
     display: flex;
     justify-content: flex-end;
-}
-
-#criadorTrilha {
-    color: white;
-
 }
 
 #criadorTrilha p:nth-child(1) {
     font-weight: bold;
 }
+
+.aula {
+    border: 2px solid #00C19C;;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 90%;
+    height: 1em;
+}
+
+#conteudos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#conteudos #colunas {
+    display: flex;
+    width: 90%;
+    
+
+}
+#conteudos #colunas p:nth-child(1) {
+    width: 46%;
+}
+#conteudos #colunas p:nth-child(2) {
+    width: 23%;
+}
+
+#conteudos #colunas p:nth-child(3) {
+    width: 24%;
+}
+
+
+#conteudos #colunas p {
+    margin: 10px 0px;
+}
+
+
+.aula a {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.aula a p{
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.aula a p:nth-child(1) {
+    width: 50%;
+}
+.aula a p:nth-child(2), .aula a p:nth-child(3){
+    width: 25%;
+}
+
+.aula img{
+    height: 1em;
+    
+}
+
+
+
 
 

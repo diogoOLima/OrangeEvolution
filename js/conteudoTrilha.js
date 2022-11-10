@@ -29,13 +29,14 @@ function getAulas(){
                             link: conteudo.link
                         }
                         conteudos.innerHTML += ` 
-                            <div class=aula>
+                            <div class="aula">
                                 <a href="${aula.link}" target="_blank">
                                     <p class="nomeAula"> ${aula.nome}</p>
                                     <p class="duracaoAula"> ${aula.duração}</p>
                                     <p class="origemAula">${aula.origem}</p>
-                                    </a>
+                                </a>
                                 <button id="statusButton${countAulas}" class ="pendente" onclick="altStatusButton(id)">Pendente</button>
+                                <img src="../images/Vector.png">
                             </div>
                             <br>
                         `
