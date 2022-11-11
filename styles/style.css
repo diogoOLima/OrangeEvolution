@@ -85,7 +85,7 @@ nav li {
 .trilhas{
     position:absolute;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     width: 1200px;
     height: 542px;
@@ -96,7 +96,7 @@ nav li {
 
 .trilha-descricao{
     display: inline-block;
-    width:291px;
+    max-width: 291px;
     height: 72px;
     margin:0 1.5%;
     margin-top: 20px;
@@ -236,24 +236,19 @@ footer{
     height: 314px;
     left: 0px;
     top:900px;
-    background: rgba(4, 3, 12, 0.9);
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
+
 }
 
 @media screen and (max-width:600px) {
     .trilhas {
         display: flex;
-        position:flex;
         flex-wrap: wrap;
         width: auto;
         left:0;
     }
 
     .username, .descricao-principal {
-        display: flex;
-        position:flex;
+        display: flex;  
         align-content: center;
         width: auto;
         left:0

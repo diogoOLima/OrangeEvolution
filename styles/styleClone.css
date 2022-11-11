@@ -1,0 +1,214 @@
+body {
+    font-family: Montserrat;
+    background-image: url("../images/Background\ Frame\ -\ Web.png");
+    background-color: rgb(4, 11, 38);
+    background-blend-mode: luminosity;
+}
+
+header{
+    width: 100%;
+    height: 95px;
+    left: 0px;
+    top: 0px;
+    background: #04030C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descricao{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    padding: 3em 0 0 5em;
+}
+
+.username{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    color:#F1F1F1;
+}
+
+.username:before{
+    content:"{ ";
+    color: #00C19C;
+}
+
+.username:after{
+    content:" }";
+    color: #00C19C;  
+}
+
+.descricao-principal{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F1F1F1;
+    margin:1em 0 0 0;
+}
+
+.trilhas{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    transform: scale(0.9);
+
+}
+
+.card{
+    display: flex;
+    align-content: center;
+}
+
+
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+
+    position: relative;
+    width: 138px;
+    height: 50px;
+    left: -243px;
+    top: 446px;
+
+    background: RGB(10,74,154,1);
+    border: 2px solid #00C19C;
+    border-radius: 10px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F1F1F1
+}
+
+button:hover{
+    background-color: RGB(0,46,154,1);
+}
+
+button:active{
+    background-color: RGB(0,16,36,1);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    height: 12em;
+    width: 100%;
+    background-color: rgba(4, 3, 12, 0.9);
+}
+
+@media screen and (max-width: 1024px){
+    header, footer {
+        width:100%;
+    } 
+    .card{
+        transform: scale(0.8);
+        width: 300px;
+        align-content: center;
+    }
+    .trilhas{
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header, footer {
+        width:100%;
+    } 
+    .card{
+        transform: scale(0.7);
+        width: 260px;
+        align-content: center;
+    }
+    .trilhas{
+        flex-wrap: nowrap;
+    }
+
+    main{
+        margin-left:-2em;
+    }
+}
+
+@media screen and (max-width: 425px){
+    header, footer {
+        width:100%;
+    } 
+
+    .card{
+        transform: scale(1);
+        width: 260px;
+        align-content: center;
+    }
+    .trilhas{
+        flex-wrap: wrap;
+        margin-left: 3em;
+        margin-top: -3em;
+    }
+
+    .logo-fcamara, .logo-orange{
+        transform: scale(0.8)
+    }
+}
+
+@media screen and (max-width: 375px){
+    header, footer {
+        width:100%;
+    } 
+
+    .card{
+        transform: scale(1);
+        width: 260px;
+        align-content: center;
+    }
+    .trilhas{
+        flex-wrap: wrap;
+        margin-left: 3em;
+        margin-top: -3em;
+    }
+
+    .logo-fcamara, .logo-orange{
+        transform: scale(0.7)
+    }
+}
+
+@media screen and (max-width: 320px){
+    header, footer {
+        width:100%;
+    } 
+
+    main{
+        margin-left: -4em;
+    }
+
+    .card{
+        transform: scale(1);
+        width: 230px;
+        align-content: center;
+    }
+    .trilhas{
+        flex-wrap: wrap;
+        margin-left: 3em;
+        margin-top: -3em;
+    }
+
+    .logo-fcamara, .logo-orange{
+        transform: scale(0.5)
+    }
+}
+
+
+
+
