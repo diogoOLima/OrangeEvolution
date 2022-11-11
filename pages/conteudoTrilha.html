@@ -38,22 +38,22 @@
     <div id="info-trilha">
         <div>
             <h3>Trilha</h3>
-            <h2>Dessenvolvimento Full Stack</h2>
+            <h2>Desenvolvimento Full Stack</h2>
             <p>Adquira conhecimentos de back-end e front-end e colabore em todas as áreas do desenvolvimento.</p>
         </div>
         <div>
-            <div id="container-progresso">
-                <div id="barra">
-                    <div></div>
+            <div class="container d-md-flex justify-content-md-between">
+                <div id="container-progresso" class="col-md-5">
+                    <div id="barra">
+                        <div></div>
+                    </div>
+                    <div id="infoProgresso"></div>
                 </div>
-                <div id="infoProgresso"></div>
-            </div>
-
-            <div class="linhaVertical"></div>
-
-            <div id="criadorTrilha">
-                <p>Trilha criada por:</p>
-                <p>Henrique Leme de Brito</p>
+                <!-- <div class="linhaVertical d-sm-none col-md-2 d-md-inline" style="text-align: center;"></div> -->
+                <div id="criadorTrilha" class="col-md-5">
+                    <p>Trilha criada por:</p>
+                    <p>Henrique Leme de Brito</p>
+                </div>
             </div>
         </div>
     </div>
@@ -61,12 +61,13 @@
     <main>
         <div class="container">
             <div id="conteudos">
+                <div>*Para uma melhor experiência, sugerimos seguir a trilha na sequência apresentada.</div>
                 <div id="colunas">
                     <div class="row d-none d-md-flex">
                         <div class="col-md-5">Nome</div>
                         <div class="col-md-2">Duração</div>
-                        <div class="col-md-2"><p>Origem</p></div>
-                        <div class="col-md-3"><p>Status</p></div>
+                        <div class="col-md-2">Origem</div>
+                        <div class="col-md-3">Status</div>
                     </div>
                 </div>
             </div>
@@ -95,5 +96,4 @@
 
     <script src="../js/conteudoTrilha.js"></script>
 </body>
-
-</html>3
+</html>

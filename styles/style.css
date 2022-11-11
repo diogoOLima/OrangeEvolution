@@ -1,3 +1,7 @@
+/* * {
+    outline: 1px solid red;
+}*/
+
 :root {
     --green: #00C19C;
 }
@@ -8,7 +12,6 @@ font-family: Montserrat;
 background-image: url("../images/Background\ Frame\ -\ Web.png");
 background-color: #001024!important;
 background-blend-mode: luminosity;
-padding-bottom: 20px;
 margin-bottom: 1px;
 }
 
@@ -240,15 +243,14 @@ div.aula{
 }
 
 .pendente{
-    background-color: red;
-}
+    background-color: #CA1C1C;
+} 
 
-.concluido{
+/* .concluido{
     background-color: blue;
-}
+} */
 
 #barra {
-    width: 30vw;
     height: 20px;
     border-radius: 3px;
     background-color: #001024;
@@ -268,7 +270,7 @@ div.aula{
     flex-direction: column;
     justify-content: space-around;
     margin: auto;
-    width: 100vw;
+    width: 99vw;
     box-sizing: border-box;
 }
 
@@ -287,8 +289,10 @@ div.aula{
 }
 
 .linhaVertical {
-    border-left: 3px solid #00C19C;
+    display: inline;
+    width: 3px;
     height: 50px;
+    background-color: #00C19C;
 
 }
 
@@ -326,11 +330,12 @@ main button {
     width: 90vw;
 }
 
-#conteudos {
+#conteudos > div{
     /* display: flex;
     flex-direction: column;
     align-items: center; 
     margin:20px;*/
+    padding: 10px 0px;
 }
 
 #conteudos #colunas {
@@ -418,6 +423,9 @@ main button {
     margin: auto;
 }
 
+.row {
+    margin: 0px !important;
+}
 
 
 
