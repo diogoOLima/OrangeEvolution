@@ -1,12 +1,8 @@
-:root {
-    --green: #00C19C;
-}
-
 
 body{
 font-family: Montserrat;
 background-image: url("../images/Background\ Frame\ -\ Web.png");
-background-color: #001024!important;
+background-color: rgb(4, 11, 38);
 background-blend-mode: luminosity;
 padding-bottom: 20px;
 margin-bottom: 1px;
@@ -21,14 +17,6 @@ header{
     background: #04030C;
 }
 
-.card-borda {
-    border: 2px solid var(--green) !important;
-    background: none!important;
-}
-
-.card-borda .card-body p{
-    margin-bottom: 0px!important;
-}
 
 .cabeçalhoPrincipal {
     margin: 10px 0px;
@@ -327,30 +315,30 @@ main button {
 }
 
 #conteudos {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center; 
-    margin:20px;*/
+    align-items: center;
+
 }
 
 #conteudos #colunas {
-    /* display: flex;
+    display: flex;
     width: 90%;
     padding: 20px;
     justify-content: space-between;
-    box-sizing: border-box;*/
+    box-sizing: border-box;
     
 }
 
 #conteudos #colunas>p{
-   /* width: 25%;
-    text-align: center;*/
+    width: 25%;
+    text-align: center;
 }
 
 
 #conteudos #colunas div {
-    /*display: flex;
-    width: 75%;*/
+    display: flex;
+    width: 75%;
 }
 
 #conteudos #colunas div p:nth-child(1) {

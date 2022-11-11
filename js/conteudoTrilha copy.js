@@ -29,18 +29,15 @@ function getAulas(){
                             link: conteudo.link
                         }
                         conteudos.innerHTML += ` 
-                        <div class="card card-borda">
-                                <div class="card-body">
-                                    <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                                        <div class="col-md-5"><div><small class="text-info">Artigo</small><p>${aula.nome}</p></div></div>
-                                        <div class="col-md-2 col-5 mt-4 mb-2 mt-sm-0"><p><small class="d-sm-none">Tempo: </small> ${aula.duração}</p></div>
-                                        <div class="col-md-2 col-7 mt-4 mb-2 mt-sm-0"><p><font class="d-sm-none">Origen: </font>${aula.origem}</p></div>
-                                        <div class="col-md-2"><font class="d-sm-none">Status: </font><button id="statusButton${countAulas}" class ="btn btn-danger" onclick="altStatusButton(id)">Pendente</button></div>
-                                        <div class="col-md-1 d-none d-sm-block"><i class="fa-solid fa-chevron-right fs-4" ></i></div>
-                                    </div>
-                                </div>
-                        </div>
-                           
+                            <div class="aula">
+                                <a href="${aula.link}" target="_blank">
+                                    <p class="nomeAula"> ${aula.nome}</p>
+                                    <p class="duracaoAula"> ${aula.duração}</p>
+                                    <p class="origemAula">${aula.origem}</p>
+                                </a>
+                                <button id="statusButton${countAulas}" class ="pendente" onclick="altStatusButton(id)">Pendente</button>
+                                <img src="../images/Vector.png">
+                            </div>
                             <br>
                         `
                     }
