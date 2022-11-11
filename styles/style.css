@@ -1,6 +1,6 @@
 /* * {
     outline: 1px solid red;
-}*/
+} */
 
 :root {
     --green: #00C19C;
@@ -270,7 +270,7 @@ div.aula{
     flex-direction: column;
     justify-content: space-around;
     margin: auto;
-    width: 99vw;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -328,6 +328,10 @@ main button {
     justify-content: space-between;
     border-radius: 5px;
     width: 90vw;
+}
+
+.card-body a {
+    color: white;
 }
 
 #conteudos > div{
@@ -412,6 +416,11 @@ main button {
     margin: 20px 20px 20px 5px;
     height: 1em;
     
+}
+#container-progresso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #btnVoltar {
