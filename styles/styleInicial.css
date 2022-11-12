@@ -64,8 +64,10 @@ header{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    transform: scale(0.9);
-
+    margin-left: 4em;
+    margin-top: 2em;
+    /*transform: scale(0.9);
+    */
 }
 
 .card{
@@ -128,6 +130,8 @@ footer{
         transform: scale(0.8);
         width: 300px;
         align-content: center;
+        margin-left: -1em;
+        margin-top: -2em;
     }
     .trilhas{
         flex-wrap: wrap;
@@ -139,9 +143,11 @@ footer{
         width:100%;
     } 
     .card{
-        transform: scale(0.7);
-        width: 260px;
+        transform: scale(0.6);
+        width: 290px;
         align-content: center;
+        margin-left: -3em;
+        margin-top: -6em;
     }
     .trilhas{
         flex-wrap: wrap;
@@ -157,10 +163,17 @@ footer{
         width:100%;
     } 
 
+    .descricao{
+        transform: scale(0.8);
+        margin-left: -1em;
+    }
+
     .card{
         transform: scale(1);
         width: 260px;
         align-content: center;
+        margin-top: 3em;
+        margin-left: 2em;
     }
     .trilhas{
         flex-wrap: wrap;
@@ -178,15 +191,21 @@ footer{
         width:100%;
     } 
 
+    .descricao{
+        width: 100%;
+        margin-left: -2em;
+    }
+
     .card{
-        transform: scale(1);
+        transform: scale(0.8);
         width: 260px;
         align-content: center;
+        margin-top: -2em;
     }
     .trilhas{
         flex-wrap: wrap;
-        margin-left: 3em;
-        margin-top: -3em;
+        margin-left: 1em;
+        margin-top: -1em;
     }
 
     .logo-fcamara, .logo-orange{
@@ -203,19 +222,27 @@ footer{
         margin-left: -4em;
     }
 
+    .descricao{
+        width: 100%;
+    }
+
     .card{
-        transform: scale(1);
-        width: 230px;
+        transform: scale(0.8);
+        width: 180px;
         align-content: center;
     }
     .trilhas{
         flex-wrap: wrap;
-        margin-left: 3em;
-        margin-top: -3em;
+        margin-left: 2em;
+        margin-top: -1em;
     }
 
     .logo-fcamara, .logo-orange{
         transform: scale(0.5)
+    }
+
+    footer a {
+        width: 12em;
     }
 }
 
