@@ -12,8 +12,16 @@ header{
     top: 0px;
     background: #04030C;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .descricao{
@@ -63,6 +71,7 @@ header{
 .card{
     display: flex;
     align-content: center;
+    width:420px;
 }
 
 
@@ -94,6 +103,7 @@ button{
 
 button:hover{
     background-color: RGB(0,46,154,1);
+    cursor:pointer
 }
 
 button:active{
@@ -120,7 +130,7 @@ footer{
         align-content: center;
     }
     .trilhas{
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 }
 
@@ -134,7 +144,7 @@ footer{
         align-content: center;
     }
     .trilhas{
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     main{
