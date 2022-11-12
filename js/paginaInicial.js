@@ -1,4 +1,5 @@
 const nomeUsuario = document.querySelector('.username');
+const iniciais = document.querySelector('.iniciais');
 
 let userLogado = JSON.parse(localStorage.getItem('userLogado'));
 
@@ -13,3 +14,8 @@ function sair(){
 }
 
 nomeUsuario.innerHTML = `Olá ${userLogado.login}`;
+
+/*  innerHtml de inicias    */
+let inicial = userLogado.login.split(' ').map((el)=>el[0]).join('');
+
+iniciais.innerHTML = `${inicial}`;

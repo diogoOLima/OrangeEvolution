@@ -25,6 +25,13 @@ header{
     width: 90%;
 }
 
+.iniciais {
+    font-weight: 600;
+    border: 2px solid #F1F1F1;
+    border-radius: 50%;
+    padding: 0.7em;
+}
+
 .descricao{
     position:relative;
     display:flex;
