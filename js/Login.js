@@ -33,9 +33,9 @@ function getUsers(){
                     }
                     localStorage.setItem('userLogado', JSON.stringify(userValid));
                     if(element.isAdmin == 1){
-                        location.href = "../pages/adminPage.html";
+                        location.href = "../pages/areaAdmin.html";
                     } else{
-                        location.href = "../pages/userPage.html";                       
+                        location.href = "../pages/paginaInicial.html";                       
                     };
                 } else {
                     if(login != element.usuario && password == element.senha) {
