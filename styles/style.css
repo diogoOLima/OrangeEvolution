@@ -14,6 +14,7 @@ background-size: cover;
 background-color: #001024!important;
 background-blend-mode: luminosity;
 margin-bottom: 1px;
+
 }
 
 header{
@@ -211,6 +212,7 @@ label{
 
 
 
+
 footer{
     display: flex;
     width: 100%;
@@ -383,7 +385,6 @@ main button {
     padding: 20px;
     box-sizing: border-box;
     
-    
 }
 
 .aula a p{
@@ -443,8 +444,6 @@ main button {
 
 
 
-
-
 #btn, #btnVoltar{
     padding: 10px 10px;
     background-color: #001024;
@@ -463,7 +462,9 @@ main button {
 .row {
     margin: 0px !important;
 }
-
+a {
+    text-decoration: none !important;
+}
 
 
 
