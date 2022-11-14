@@ -195,38 +195,21 @@ nav li {
 
 
 input{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 30px;
-    gap: 10px;
-
-    position: absolute;
-    width: 138px;
-    height: 50px;
-    left: 95px;
-    top: 442px;
-
-    background: RGB(10,74,154,1);
-    border: 2px solid #00C19C;
+    background: #04030C;
     border-radius: 10px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #F1F1F1
+    border: none;
+    width: 100%;
+    height: 2em;
+    color: white;
 }
 
-input:hover{
-    background-color: RGB(0,46,154,1);
+label{
+    width: 100%;
+    color: white;
+    margin: 5px 0px;
 }
 
-input:active{
-    background-color: RGB(0,16,36,1);
-}
+
 
 footer{
     display: flex;
@@ -289,6 +272,16 @@ div.aula{
 
 }
 
+#info-trilha > #metricas {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #00C19C;
+    border-bottom: 2px solid #00C19C;
+    padding: 20px 10vw;
+    box-sizing: border-box;
+
+}
+
 .linhaVertical {
     display: inline;
     width: 3px;
@@ -334,6 +327,8 @@ main button {
 .card-body a {
     color: white;
 }
+
+
 
 #conteudos > div{
     /* display: flex;
@@ -424,19 +419,52 @@ main button {
     justify-content: center;
 }
 
-#btnVoltar {
-    padding: 10px 60px;
+#formTrilha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #00C19C;
+    border-bottom: 2px solid #00C19C;
+    margin-bottom: 30px;
+    padding: 30px 0px;
+}
+
+#formTrilha > div {
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+#formTrilha div > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+
+
+#btn, #btnVoltar{
+    padding: 10px 10px;
     background-color: #001024;
     border:  2px solid #00C19C;
     color: white;
     border-radius: 10px;
     display: block;
     margin: auto;
+    width: 150px;
+}
+
+.btn-admin{
+    background: transparent;
 }
 
 .row {
     margin: 0px !important;
 }
+
+
 
 
 
