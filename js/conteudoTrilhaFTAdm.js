@@ -90,29 +90,29 @@ function getAulaPorId(id){
 
 }
 
-function editarAula(id) {
-    id = id.slice(6)
-    let formLink = document.querySelector('#link').value
-    let formNome = document.querySelector('#nome').value
-    let formTipo = document.querySelector('#tipo').value
-    let formDuracao = document.querySelector('#duracao').value
-    let formOrigem = document.querySelector('#origem').value
+// function editarAula(id) {
+//     id = id.slice(6)
+//     let formLink = document.querySelector('#link').value
+//     let formNome = document.querySelector('#nome').value
+//     let formTipo = document.querySelector('#tipo').value
+//     let formDuracao = document.querySelector('#duracao').value
+//     let formOrigem = document.querySelector('#origem').value
             
-    body = {
-        "nomeAula": formNome,
-        "link": formLink,
-        "tempo": formDuracao,
-        "origem": formOrigem,
-        "tipo": formTipo
-    }
+//     body = {
+//         "nomeAula": formNome,
+//         "link": formLink,
+//         "tempo": formDuracao,
+//         "origem": formOrigem,
+//         "tipo": formTipo
+//     }
 
-    console.log(body)
+//     console.log(body)
 
-    axios.put(`${url}/${id}`, body)
-        .then(response => {
-            getAulas();
-        })
-}
+//     axios.put(`${url}/${id}`, body)
+//         .then(response => {
+//             getAulas();
+//         })
+// }
 
 function getAulas(){
     axios.get(url)
