@@ -18,6 +18,7 @@ Orange Evolution é a plataforma de estudos em áreas de tecnologia com trilhas 
   * [Páginas de trilha](Páginas-de-trilha)
   * [Página de trilha administrador](Página-de-trilha-administrador)
 * [Funcionalidades](Funcionalidades)
+* [Funcionalidades futuras](Funcionalidades-futuras)
 * [Tecnologias utilizadas](Tecnologias-utilizadas)
 * [Responsividade](Responsividade)
 * [Agradecimentos](Agradecimentos)
@@ -60,6 +61,10 @@ Tendo os conteúdos apresentados da mesma forma que na página de trilhas do est
   + Usuário Admnistrador
     - Alternativa de excluir, editar ou inserir novos conteúdos a qualquer momento
 ![tela admin](https://user-images.githubusercontent.com/96957356/201770163-ed1361d1-4fe5-4657-a0f3-72599928c86e.png)
+
+## Funcionalidades futuras
+* Futuramente haverá também a opção de editar uma trilha já existente
+* Serão também implementados os alertas para uma confirmação na adição, edição e exclusão de conteúdos
 
 ## Tecnologias utilizadas
 * HTML
