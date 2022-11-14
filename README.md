@@ -36,7 +36,7 @@ O backend da aplicação pode ser encontrado no seguinte link:
 ## Utilização da plataforma
 
 ### Landing page
-Através do sitemap elaborado pelo departamento de UX, sua jornada na plataforma se inicia pela landing page, que o direcionará para a página de criação de uma nova conta, ou então, para a página de login, no caso de usuário já cadastrado.
+Através do sitemap elaborado pelo departamento de UX, sua jornada na plataforma se inicia pela landing page, que o direcionará para a página de login para a validação das credenciais de usuário.
 
 ### Página inicial usuário
 Aqui você terá a oportunidade de escolher entre uma ou várias das trilhas disponíveis para iniciar sua jornada de estudos.
