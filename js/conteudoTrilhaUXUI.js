@@ -4,6 +4,15 @@ const infoProgressoDOM = document.querySelector('#infoProgresso')
 const progresso = document.querySelector("#barra div")
 
 
+/* iniciais Header */
+const iniciais = document.querySelector('.iniciais');
+let userLogado = JSON.parse(localStorage.getItem('userLogado'));
+let inicial = userLogado.login.split(' ').map((el)=>el[0]).join('');
+
+iniciais.innerHTML = `${inicial}`;
+
+//
+
 var countConcluido = 0;
 let countAulas = 0;
 conteudos.style.color = "white"
