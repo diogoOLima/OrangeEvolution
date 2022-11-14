@@ -40,7 +40,13 @@ header{
 }
 
 .iniciais-sair a p {
-    color: white;
+    color: #00C19C;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.iniciais-sair a p:hover {
+    transform: scale(1.2);
 }
 
 .descricao{

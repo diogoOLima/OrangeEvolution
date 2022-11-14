@@ -15,8 +15,7 @@ conteudos.style.color = "white"
 function fazPost(url, body){
     axios.post(url, body)
         .then(response => {
-            alert(JSON.stringify(response.data))
-            console.log(JSON.stringify(response.data))
+            alert("Aula cadastrada com sucesso!")
             getAulas()
         })
 }
@@ -57,12 +56,15 @@ function cadastroAula(){
 
 function removerAula(id){
     id = id.slice(6)
-    axios.delete(`${url}/${id}`)
-    .then(response =>{
-        alert(`Aula de id = ${id} foi removido com sucesso!`)
-        getAulas()
-        window.location.reload();
-    })
+    let confirmacao = confirm("Você realmente deseja excluir essa aula?");
+    if(confirmacao) {
+        axios.delete(`${url}/${id}`)
+        .then(response =>{
+            alert(`Aula de id = ${id} foi removida com sucesso!`)
+            getAulas()
+            window.location.reload();
+        })
+    }
 }
 
 function getAulaPorId(id){
