@@ -76,8 +76,7 @@ Todas as telas foram elaboradas de forma a apresentar recursos responsivos para 
 Expressamos a profunda gratidão do grupo por todo o apoio de nossos mentores e padrinhos do grupo FCamara ao longo da jornada de concepção e elaboração do projeto.
 
 # Autores
-![thumb_raquel (1)](https://user-images.githubusercontent.com/96957356/201738714-e3422ab0-8d9e-40ed-a04b-e5b9f73752c8.jpg)<br>[Raquel Ribeiro](https://www.behance.net/raquelalribeiro)
-![thumb_lucas (1)](https://user-images.githubusercontent.com/96957356/201738718-bf32611f-9f5e-40c9-ba99-ebb7ce0f3bcb.jpg)<br>[Lucas Passos](https://github.com/LucasBinho)
-![thumb_diogo (1)](https://user-images.githubusercontent.com/96957356/201738720-d6fd1d24-8e83-459b-ba66-1ba2d9c37046.jpg)<br>[Diogo Lima](https://github.com/diogoOLima)
-![thum_Luan (1)](https://user-images.githubusercontent.com/96957356/201738253-8171cc67-d791-4f74-a43a-a1c814732c43.jpg)<br>
-[Luan Moreira](https://github.com/luanmoreira59)
+![thumb_raquel (1)](https://user-images.githubusercontent.com/96957356/201738714-e3422ab0-8d9e-40ed-a04b-e5b9f73752c8.jpg) [Raquel Ribeiro](https://www.behance.net/raquelalribeiro)
+![thumb_lucas (1)](https://user-images.githubusercontent.com/96957356/201738718-bf32611f-9f5e-40c9-ba99-ebb7ce0f3bcb.jpg) [Lucas Passos](https://github.com/LucasBinho)
+![thumb_diogo (1)](https://user-images.githubusercontent.com/96957356/201738720-d6fd1d24-8e83-459b-ba66-1ba2d9c37046.jpg) [Diogo Lima](https://github.com/diogoOLima)
+![thum_Luan (1)](https://user-images.githubusercontent.com/96957356/201738253-8171cc67-d791-4f74-a43a-a1c814732c43.jpg) [Luan Moreira](https://github.com/luanmoreira59)
