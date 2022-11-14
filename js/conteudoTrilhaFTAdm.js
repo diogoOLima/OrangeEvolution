@@ -1,10 +1,11 @@
 
-
-
 const url = "https://orangevolution.herokuapp.com/aulas"
 const conteudos = document.querySelector('#conteudos')
 const infoProgressoDOM = document.querySelector('#infoProgresso')
 const progresso = document.querySelector("#barra div")
+const btnAdicionar = document.querySelector(".btnAdicionar")
+const divBtn = document.querySelector(".divBtn")
+// const form = document.querySelector("form")
 
 
 var countConcluido = 0;
@@ -64,6 +65,55 @@ function removerAula(id){
     })
 }
 
+function getAulaPorId(id){
+    id = id.slice(6)
+    axios.get(`${url}/${id}`)
+        .then(response => {
+            const data = response.data;
+            console.log(data)
+            btnAdicionar.style.display = 'none'
+            // form.onsubmit = editarAula()
+            // divBtn.innerHTML = `<button id="aulaId${id}" class="aulaId${id}" type="submit">Editar</button>`
+
+            let formLink = document.querySelector('#link')
+            let formNome = document.querySelector('#nome')
+            let formTipo = document.querySelector('#tipo')
+            let formDuracao = document.querySelector('#duracao')
+            let formOrigem = document.querySelector('#origem')
+
+            formLink.value = data.link
+            formNome.value = data.nomeAula
+            formTipo.value = data.tipo
+            formDuracao.value = data.tempo
+            formOrigem.value = data.origem
+        })
+
+}
+
+function editarAula(id) {
+    id = id.slice(6)
+    let formLink = document.querySelector('#link').value
+    let formNome = document.querySelector('#nome').value
+    let formTipo = document.querySelector('#tipo').value
+    let formDuracao = document.querySelector('#duracao').value
+    let formOrigem = document.querySelector('#origem').value
+            
+    body = {
+        "nomeAula": formNome,
+        "link": formLink,
+        "tempo": formDuracao,
+        "origem": formOrigem,
+        "tipo": formTipo
+    }
+
+    console.log(body)
+
+    axios.put(`${url}/${id}`, body)
+        .then(response => {
+            getAulas();
+        })
+}
+
 function getAulas(){
     axios.get(url)
         .then(response => {
@@ -92,7 +142,7 @@ function getAulas(){
                                         <div class="col-md-5"><div><small class="text-info">Artigo</small><p>${aula.nome}</p></div></div>
                                         <div class="col-md-2 col-5 mt-4 mb-2 mt-sm-0"><p><small class="d-md-none text-info">Tempo: </small> ${aula.duração}</p></div>
                                         <div class="col-md-2 col-7 mt-4 mb-2 mt-sm-0"><p><font class="d-md-none text-info">Origem: </font>${aula.origem}</p></div>
-                                        <div class="col-md-1 col-3"><button onclick="" class="btn-admin"><img src="../images/edit.png"></button></div>
+                                        <div class="col-md-1 col-3"><button onclick="getAulaPorId(id)" class="btn-admin" id="aulaId${aula.aulaId}"><img src="../images/edit.png"></button></div>
                                         <div class="col-md-1 col-8"><button onclick="removerAula(id)" class="btn-admin" id="aulaId${aula.aulaId}"><img src="../images/delete.png"></button></div>
                                         <div class="col-md-1 col-1"><img src="../images/points.png"></div>
                                         
