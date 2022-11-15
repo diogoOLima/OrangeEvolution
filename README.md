@@ -9,6 +9,7 @@ Orange Evolution é a plataforma de estudos em áreas de tecnologia com trilhas 
 # Índice
 * [Logo do projeto](#Logo-Evolution)
 * [Orange Evolution](#Orange-Evolution)
+* [Acesso à plataforma](#Acesso-direto-à-plataforma)
 * [Pré requisitos](#Pré-requisitos)
 * [Instalação](#Instalação)
 * [Utilização da plataforma](#Utilização-da-plataforma)
@@ -24,6 +25,10 @@ Orange Evolution é a plataforma de estudos em áreas de tecnologia com trilhas 
 * [Responsividade](#Responsividade)
 * [Agradecimentos](#Agradecimentos)
 * [Autores](#Autores)
+
+### Acesso direto à plataforma
+Para acessar diretamente a plataforma, clique no link:
+<https://orangeevolutionsquad16.netlify.app/>
 
 ### Pré requisitos 
 O que é necessário ter instalado para rodar a aplicação?
