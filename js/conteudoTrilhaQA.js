@@ -20,7 +20,6 @@ conteudos.style.color = "white"
 function getAulas(){
     axios.get(url)
         .then(response => {
-            console.log(response.data);
             const data = response.data
 
             const nomeTrilha = ["Artigo QA", "Video QA", "Curso QA"]

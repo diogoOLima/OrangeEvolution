@@ -81,7 +81,6 @@ function getAulaPorId(id){
 function getAulas(){
     axios.get(url)
         .then(response => {
-            console.log(response.data);
             const data = response.data
 
             const nomeTrilha = ["Artigo FullStack", "Video FullStack", "Curso FullStack"]

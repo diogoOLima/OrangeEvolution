@@ -35,7 +35,7 @@ function getUsers(){
                     if(element.isAdmin == 1){
                         location.href = "../pages/areaAdmin.html";
                     } else{
-                        location.href = "../pages/paginaInicial.html";                       
+                        location.href = "../pages/areaUsuario.html";                       
                     };
                 } else {
                     if(login != element.usuario && password == element.senha) {
@@ -77,19 +77,3 @@ function getUsers(){
             })                    
         })
 }
-
-
-
-// if (login == element.usuario && password != element.senha) {
-//     senhaErro.innerHTML = "Senha digitada é invalida."
-//     senhaErro.style.color = "#00ff00"; 
-// }  else if (login != element.usuario && password == element.senha) {
-//     usuarioErro.innerHTML = "Usuário digitado é inválido."
-//     usuarioErro.style.color = "#00ff00";
-// }
-// else if (login != element.usuario && password != element.senha) {
-//         usuarioErro.innerHTML = "Usuário digitado é inválido."
-//         usuarioErro.style.color = "#00ff00";
-//         senhaErro.innerHTML = "Senha digitada é invalida."
-//         senhaErro.style.color = "#00ff00";    
-//  } 

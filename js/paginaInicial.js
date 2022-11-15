@@ -5,16 +5,16 @@ let userLogado = JSON.parse(localStorage.getItem('userLogado'));
 
 if(localStorage.getItem('token') == null){
     alert("Você precisa esta logado para acessar essa pagina.");
-    location.href = "../pages/Login.html";
+    location.href = "../pages/login.html";
 }
 
 function sair(){
     localStorage.removeItem('token');
-    location.href = "../pages/Login.html";
+    location.href = "../pages/login.html";
 }
 
 function acessarFS(){
-    location.href = "../pages/conteudoTrilha.html"
+    location.href = "../pages/conteudoTrilhaFS.html"
 }
 function acessarUIUX(){
     location.href = "../pages/conteudoTrilhaUXUI.html"
@@ -24,7 +24,7 @@ function acessarQA(){
 }
 
 function acessarFSAdm(){
-    location.href = "../pages/conteudoTrilhaFTAdm.html"
+    location.href = "../pages/conteudoTrilhaFSAdm.html"
 }
 function acessarUIUXAdm(){
     location.href = "../pages/conteudoTrilhaUXUIAdm.html"
