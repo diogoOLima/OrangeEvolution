@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    
+    background-image: url('../images/Background-Frame\ -Web.png');
+    background-blend-mode: luminosity;
+    background-color: rgb(04, 11, 38);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4.4em;
+    background-color:#04030C;;
+}
+
+header img {
+    width: 3.75em;
+    height: 3.875em;
+}
+
+header .iconLogo {
+    width: 3.5em;
+    height: 3.5em;
+}
+
+.secao-um {
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.inicioJornada {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.inicioJornada p {
+    color: #FFFFFF;
+    font-size: 55px;
+    text-align: center;
+}
+
+
+.inicioJornada img {
+    width: 2.375em;
+    height: 8.6875em;
+    margin-top: 2em;
+}
+
+.secao-um-p {
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.secao-dois {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #00C19C;
+    border-bottom: 2px solid #00C19C;;
+    height: 49.5em;
+    width: 100%;
+}
+
+
+
+.escolhaTrilhas {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10em;
+    margin-bottom: 3em;
+    margin-top: 2.5em;
+}
+
+.escolhaTrilhas img {
+    width: 0.8em;
+    height: 2em;
+}
+
+
+.trilhas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.trilhas-img {
+    display: flex;
+}
+
+.trilha-botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.botao-dois {
+    height: 4.0625em;
+    width: 24.125em;
+    border: 1px solid #00C19C;
+    background-color: #001024;
+    color: #F1F1F1;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer; 
+    margin-top: 4em;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    height: 19.625em;
+    width: 100%;
+    background-color: rgba(4, 3, 12, 0.9);
+}
+
+.fcamara {
+    width: 15.625em;
+    height: 3.5em;
+}
+
+.orangejuice {
+    width: 7.5em;
+    height: 5.625em
+}
+
+@media (max-width: 1441px) {
+    .escolhaTrilhas {
+        margin-left: 8.5em;
+    }
+}
+
+@media (max-width: 1025px) {
+    .trilhas-img {
+        width: 15.5em;
+        padding: 1.5em;
+    }
+
+    .escolhaTrilhas {
+        margin-left: 6.5em;
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 769px) {
+    .escolhaTrilhas {
+        margin-left: 8em;
+    }
+}
+
+@media (max-width: 426px) {
+    .inicioJornada p {
+        font-size: 30px;
+    }
+
+    .inicioJornada img {
+        width: 1.375em;
+        height: 6.6875em;
+       margin-bottom: 2em;
+    }
+
+    .secao-um {
+        height: 41em;
+    }
+
+    .secao-um-p {
+        font-size: 20px;
+    }
+
+    .secao-dois {
+        height: 55.5em;
+    }
+
+    .escolhaTrilhas {
+       font-size: 20px;
+       text-align: center;
+       margin-left: 3em;
+    }
+
+
+    .trilhas-img {
+        display: flex;
+        width: 13.5em;
+        padding: 0.3em;
+    }
+
+    .fcamara {
+        width: 11.625em;
+        height: 2.5em;
+    }
+
+    .orangejuice {
+        width: 6.5em;
+        height: 4.625em;
+    }
+
+}
+
+@media (max-width: 376px) {
+    .inicioJornada p {
+        font-size: 28px;
+    }
+
+    .inicioJornada img {
+        width: 1.375em;
+        height: 5em;
+    }
+
+    .secao-um-p {
+        font-size: 18px;
+    }
+
+    .escolhaTrilhas {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 1.5em;
+     }
+
+     .trilhas-img {
+        width: 14em;
+     }
+
+     .botao-dois {
+        width: 20.125em;
+     }
+
+     footer {
+        height: 17em;
+     }
+}
+
+@media (max-width: 321px) {
+    .inicioJornada p {
+        font-size: 23px;
+    }
+
+    .inicioJornada img {
+        width: 1.375em;
+        height: 5em;
+    }
+
+    .secao-um-p {
+        font-size: 15px;
+    }
+
+    .escolhaTrilhas {
+        font-size: 16px;
+        text-align: center;
+        margin-left: 2em;
+     }
+
+     .fcamara {
+        width: 8.625em;
+        height: 2.5em;
+    }
+
+    .orangejuice {
+        width: 5.5em;
+        height: 3.625em;
+    }
+}
