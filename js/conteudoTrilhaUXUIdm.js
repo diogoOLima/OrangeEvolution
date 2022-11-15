@@ -1,11 +1,9 @@
-
 const url = "https://orangevolution.herokuapp.com/aulas"
 const conteudos = document.querySelector('#conteudos')
 const infoProgressoDOM = document.querySelector('#infoProgresso')
 const progresso = document.querySelector("#barra div")
 const btnAdicionar = document.querySelector(".btnAdicionar")
 const divBtn = document.querySelector(".divBtn")
-
 
 const iniciais = document.querySelector('.iniciais');
 let userLogado = JSON.parse(localStorage.getItem('userLogado'));
@@ -78,13 +76,14 @@ function getAulaPorId(id){
 
 }
 
+
+
 function getAulas(){
     axios.get(url)
         .then(response => {
-            console.log(response.data);
             const data = response.data
 
-            const nomeTrilha = ["Artigo FullStack", "Video FullStack", "Curso FullStack"]
+            const nomeTrilha = ["Artigo UX/UI", "Video UX/UI", "Curso UX/UI"]
 
 
 
@@ -119,6 +118,7 @@ function getAulas(){
 
                 })
             })
+            
         })
 }
 getAulas();

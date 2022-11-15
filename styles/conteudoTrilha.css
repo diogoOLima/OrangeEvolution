@@ -262,6 +262,7 @@ div.aula{
 
 #info-trilha > div:nth-child(2) {
     display: flex;
+    background-color: black;
     justify-content: space-between;
     border-top: 2px solid #00C19C;
     border-bottom: 2px solid #00C19C;
@@ -455,11 +456,14 @@ a {
     justify-content: center;
     display: flex;
     padding: 40px 0px !important;
+    width: 100% !important;
 }
 #legenda > img{
     height: 2em;
     width: 0.7em;
 }
+
+
 
 @media(max-width: 600px){
     #img1 {
@@ -473,6 +477,21 @@ a {
         width: 0.7em;
     }
 }
+@media(max-width: 600px){
+    #legenda > p {
+        font-size: 1.3em;
+        width: 220px;
+         
+    }
+}
+
+ @media(max-width: 474){
+    #legenda > p {
+        font-size: 1.3em;
+        width: 220px;
+         
+    }
+ }
 
 @media(max-width: 425px){
     .img3, .img4 {
@@ -480,13 +499,15 @@ a {
         width: 0.4em;
     }
     #legenda > p {
-        font-size: 1em;  
+        font-size: 1.3em;
+        width: 220px;
          
     }
 }
 @media(max-width: 375px){
     #legenda > p {
-        font-size: 0.8em;   
+        font-size: 1.3em;
+        width: 220px; 
     }
 }
 
@@ -496,9 +517,12 @@ a {
         width: 0.4em;
     }
     #legenda > p {
-        font-size: 0.6em;   
+        font-size: 1.em;
+        width: 220px;
     }
 }
+
+
 
 
 
