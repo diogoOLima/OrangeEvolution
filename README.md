@@ -36,6 +36,13 @@ O backend da aplicação pode ser encontrado no seguinte link:
 
 ## Utilização da plataforma
 
+### Usuários Cadastrados no Banco
+É possível fazer login no site para o acesso as páginas de usuário (com os campos de login e senha vazios) ou para a página de admnistrador (com o botão de Login como Administrador), porém, também é possível fazer o teste de integração com o banco de dados, se for utilizado um dos usuários já cadastrados, como é mostrado na imagem abaixo:
+
+![usuarios](./images/Usuarios.PNG)
+
+
+
 ### Landing page
 Através do sitemap elaborado pelo departamento de UX, sua jornada na plataforma se inicia pela landing page, que o direcionará para a página de login para a validação das credenciais de usuário.
 
@@ -61,6 +68,8 @@ Tendo os conteúdos apresentados da mesma forma que na página de trilhas do est
   + Usuário Admnistrador
     - Alternativa de excluir, editar ou inserir novos conteúdos a qualquer momento
 ![tela admin](https://user-images.githubusercontent.com/96957356/201770163-ed1361d1-4fe5-4657-a0f3-72599928c86e.png)
+
+
 
 ## Funcionalidades futuras
 * Futuramente haverá também a opção de editar uma trilha já existente
