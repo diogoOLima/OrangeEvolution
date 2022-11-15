@@ -188,7 +188,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 912px){
     header, footer {
         width:100%;
     } 
@@ -208,31 +208,94 @@ footer{
     }
 }
 
-@media screen and (max-width: 426px){
+
+
+@media (max-width: 758px) {
+    .trilhas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .descricao {
+        align-items: center;
+
+    }
+
+    .username {
+        font-size: 30px;
+    }
+
+    .descricao-principal {
+        font-size: 22px;
+    }
+    
+}
+
+@media(max-width: 600px) {
+    .username {
+        font-size: 28px;
+    }
+
+    .descricao-principal {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 476px){
     header, footer {
         width:100%;
     } 
 
     .descricao{
-        transform: scale(0.8);
-        margin-left: -1em;
+        align-items: center;
     }
 
-    .card{
+    .username {
+        font-size: 26px;
+    }
+
+    .descricao-principal {
+        font-size: 16px;
+    }
+
+    .card img{
         transform: scale(1);
-        width: 260px;
+        width: 400px;
         align-content: center;
-        margin-top: 3em;
-        margin-left: 2em;
     }
     .trilhas{
         flex-wrap: wrap;
-        margin-left: 3em;
-        margin-top: -3em;
+        align-items: center;
+        justify-content: center;
     }
 
     .logo-fcamara, .logo-orange{
         transform: scale(0.8)
+    }
+}
+
+@media (max-width: 460px) {
+    .username {
+        font-size: 24px;
+    }
+
+    .descricao-principal {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 426px) {
+    .username {
+        font-size: 22px;
+    }
+
+    .descricao-principal {
+        font-size: 12px;
     }
 }
 
@@ -242,8 +305,17 @@ footer{
     } 
 
     .descricao{
-        width: 100%;
-        margin-left: -2em;
+        align-items: center;
+        justify-content: center;   
+        margin-right: 2.5em; 
+    }
+
+    .username {
+        font-size: 20px;
+    }
+
+    .descricao-principal {
+        font-size: 10px;
     }
 
     .card{
@@ -268,17 +340,33 @@ footer{
         width:100%;
     } 
 
+    .container img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #btnSair {
+        display: flex;
+        justify-content: center;
+        width: 64px;
+        height: 40px;
+        font-size: 14px;
+        
+    }
+
     main{
         margin-left: -4em;
     }
 
     .descricao{
-        width: 100%;
+       align-items: center;
+       justify-content: center;
     }
 
-    .card{
+    .card img{
         transform: scale(0.8);
-        width: 180px;
+        width: 450px;
+        height: 600px;
         align-content: center;
     }
     .trilhas{
