@@ -19,8 +19,12 @@
         <input type="password" name="password" id="ipassword" placeholder="Senha" >
         <span id="erro-senha"></span>
         <span class="forgotpassword">Esqueci minha senha</span>
-        <button id="send" onclick="getUsers()">Entrar</button>
+        <button onclick="getUsers()">Entrar</button>
         <span class="noAccount">Não tem conta? <span class="register">Cadastre-se</span></span>
+        <br>
+        <div class="openLogin">
+            <button onclick="openGetAdmin()">Login como Administrador</button>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../js/login.js"></script>

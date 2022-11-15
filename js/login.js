@@ -1,5 +1,4 @@
 const url = "https://orangevolution.herokuapp.com/usuarios"
-const botao = document.getElementById('send');
 const usuarioErro = document.getElementById('erro-login');
 const senhaErro = document.getElementById('erro-senha');
 
@@ -38,6 +37,19 @@ function getUsers(){
                         location.href = "../pages/areaUsuario.html";                       
                     };
                 } else {
+                    if(login == "" && password == "") {
+                        let userValid = {
+                            id: data[0].usuario_id,
+                            login: data[0].usuario,
+                            password: data[0].senha,
+                            isAdmin: data[0].isAdmin
+                        }
+                        let token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2);
+                        localStorage.setItem('token', token);
+                        localStorage.setItem('userLogado', JSON.stringify(userValid));
+                        location.href = "../pages/areaUsuario.html"; 
+                        erroUSuariosenha = true;
+                    }
                     if(login != element.usuario && password == element.senha) {
                         usuarioErro.innerHTML = "Usuário digitado é inválido."
                         usuarioErro.style.color = "#ff0000";
@@ -77,3 +89,44 @@ function getUsers(){
             })                    
         })
 }
+
+function openGetUsers(){
+    axios.get(url)
+    .then(response => {
+        const data = response.data;
+        let userValid = {
+            id: data[0].usuario_id,
+            login: data[0].usuario,
+            password: data[0].senha,
+            isAdmin: data[0].isAdmin
+        }
+
+        let token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2);
+        localStorage.setItem('token', token);
+
+        localStorage.setItem('userLogado', JSON.stringify(userValid));
+        location.href = "../pages/areaUsuario.html"; 
+
+    }
+)}
+
+function openGetAdmin(){
+    axios.get(url)
+    .then(response => {
+        const data = response.data;
+        console.log(data)
+        let userValid = {
+            id: data[4].usuario_id,
+            login: data[4].usuario,
+            password: data[4].senha,
+            isAdmin: data[4].isAdmin
+        }
+
+        let token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2);
+        localStorage.setItem('token', token);
+
+        localStorage.setItem('userLogado', JSON.stringify(userValid));
+        location.href = "../pages/areaAdmin.html"; 
+
+    }
+)}
