@@ -105,7 +105,7 @@ function getAulas(){
                                         <div class="col-md-5"><div><small class="text-info">Artigo</small><p>${aula.nome}</p></div></div>
                                         <div class="col-md-2 col-5 mt-4 mb-2 mt-sm-0"><p><small class="d-md-none text-info">Tempo: </small> ${aula.duração}</p></div>
                                         <div class="col-md-2 col-7 mt-4 mb-2 mt-sm-0"><p><font class="d-md-none text-info">Origem: </font>${aula.origem}</p></div>
-                                        <div class="col-md-1 col-3"><button onclick="getAulaPorId(id)" class="btn-admin" id="aulaId${aula.aulaId}"><img src="../images/edit.png"></button></div>
+                                        <div class="col-md-1 col-3"><a href="#secForm"><button onclick="getAulaPorId(id)" class="btn-admin" id="aulaId${aula.aulaId}"><img src="../images/edit.png"></button></div></a>
                                         <div class="col-md-1 col-6"><button onclick="removerAula(id)" class="btn-admin" id="aulaId${aula.aulaId}"><img src="../images/delete.png"></button></div>
                                         <div class="col-md-1 col-3"><img src="../images/points.png"></div>    
                                     </div>
