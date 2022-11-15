@@ -6,7 +6,6 @@ const progresso = document.querySelector("#barra div")
 const btnAdicionar = document.querySelector(".btnAdicionar")
 const divBtn = document.querySelector(".divBtn")
 
-
 const iniciais = document.querySelector('.iniciais');
 let userLogado = JSON.parse(localStorage.getItem('userLogado'));
 let inicial = userLogado.login.split(' ').map((el)=>el[0]).join('');
@@ -81,10 +80,9 @@ function getAulaPorId(id){
 function getAulas(){
     axios.get(url)
         .then(response => {
-            console.log(response.data);
             const data = response.data
 
-            const nomeTrilha = ["Artigo FullStack", "Video FullStack", "Curso FullStack"]
+            const nomeTrilha = ["Artigo QA", "Video QA", "Curso QA"]
 
 
 
