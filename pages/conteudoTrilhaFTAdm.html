@@ -29,28 +29,33 @@
 
 
             <nav class="cabecalhoPrincipal-nav">
-                <ul>
-                    <li>>Initials</li>
-                </ul>
+                <div>
+                    <h2 class="iniciais"></h2>
+                </div>
             </nav>
         </div>
     </header>
 
     <div id="info-trilha">
-        <div>
-            <h3>Trilha</h3>
-            <h2>Desenvolvimento Full Stack</h2>
-            <p>Adquira conhecimentos de back-end e front-end e colabore em todas as áreas do desenvolvimento.</p>
+        <div class="resumo row">
+            <div class="col-md-6 col-xs-12">
+                <h3>Trilha</h3>
+                <h2>Desenvolvimento Full Stack</h2>
+                <p>Adquira conhecimentos de back-end e front-end e colabore em todas as áreas do desenvolvimento.</p>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <a href="#secForm"><button id="btn">Adicionar</button></a>
+            </div>
         </div>
         <div id="metricas">
             <div class="container">
                 <div class="row row-cols-2 row-cols-sm-2 row-cols-md-6">
-                    <div class="col" style="justify-content: center;"><img src="../images/smallConteudo.png" alt=""></div>
-                    <div class="col" style="justify-content: center;"><img src="../images/smallHoras.png" alt=""></div>
-                    <div class="col" style="justify-content: center;"><img src="../images/smallAvaliacoes.png" alt=""></div>
-                    <div class="col" style="justify-content: center;"><img src="../images/smallUsuarios.png" alt=""></div>
-                    <div class="col" style="justify-content: center;"><img src="../images/smallConcluido.png" alt=""></div>
-                    <div class="col" style="justify-content: center;"><img src="../images/smallEdit.png" alt=""></div>
+                    <div class="col"><img src="../images/smallConteudo.png" alt=""></div>
+                    <div class="col"><img src="../images/smallHoras.png" alt=""></div>
+                    <div class="col"><img src="../images/smallAvaliacoes.png" alt=""></div>
+                    <div class="col"><img src="../images/smallUsuarios.png" alt=""></div>
+                    <div class="col"><img src="../images/smallConcluido.png" alt=""></div>
+                    <div class="col"><img src="../images/smallEdit.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -61,6 +66,11 @@
             <div class="container">
                 <div id="conteudos">
                     <div>*Para uma melhor experiência, sugerimos seguir a trilha na sequência apresentada.</div>
+                    <div id="legenda">
+                        <img class="img4" src="../images/chave_esq.png">
+                        <p>Adicionar conteúdo</p>
+                        <img  class="img3" src="../images/chave_dir.png">
+                    </div>
                     <div id="colunas">
                         <div class="row d-none d-md-flex">
                             <div class="col-md-5">Nome</div>
@@ -73,28 +83,33 @@
             </div>
         </section>
 
-        <section>
+        <section id="secForm">
             <form onsubmit="cadastroAula()" id="formTrilha">
+                <div id="legenda">
+                    <img class="img4" src="../images/chave_esq.png">
+                    <p>Adicionar conteúdo</p>
+                    <img  class="img3" src="../images/chave_dir.png">
+                </div>
                 <div>
                     <div>
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nomeAula" placeholder="Link">
+                        <input type="text" id="nome" name="nomeAula">
                     </div>
                     <div>
                         <label for="link">Link</label>
-                        <input type="text" id="link" name="link" placeholder="Link">
+                        <input type="text" id="link" name="link">
                     </div>
                     <div>
                         <label for="duracao">Duração</label>
-                        <input type="text" id="duracao" name="tempo" placeholder="Link">
+                        <input type="text" id="duracao" name="tempo">
                     </div>
                     <div>
                         <label for="origem">Origem</label>
-                        <input type="text" id="origem" name="origem" placeholder="Link">
+                        <input type="text" id="origem" name="origem">
                     </div>
                     <div>
                         <label for="tipo">Tipo</label>
-                        <input type="text" id="tipo" name="tipo" placeholder="Link">
+                        <input type="text" id="tipo" name="tipo">
                     </div>
                 </div>
                 <div class="col divBtn"><button id="btn" class="btnAdicionar" type="submit">Adicionar</button></div>
@@ -105,24 +120,13 @@
         <a href="./areaAdmin.html"><button id="btn">Voltar</button></a>
         
     </main>
-    <!-- <div class="container" style=" padding: 20px;">
-        <div class="card card-borda">
-            <div class="card-body">
-                <div class="row" style="display: flex;align-items: center;justify-content: center;">
-                    <div class="col-md-5"><div><small class="text-info">Artigo</small><p>Migração de carreira</p></div></div>
-                    <div class="col-md-2 col-5 mt-4 mb-2 mt-sm-0"><p><small class="d-sm-none">Tempo:</small> 6 min</p></div>
-                    <div class="col-md-2 col-7 mt-4 mb-2 mt-sm-0"><p><font class="d-sm-none">Origen:</font> Orange Juice</p></div>
-                    <div class="col-md-2"><font class="d-sm-none">Status: </font><a href="" class="btn btn-danger">Pendente</a></div>
-                    <div class="col-md-1 d-none d-sm-block"><i class="fa-solid fa-chevron-right fs-4" ></i></div>
-                </div>
-            </div>
-          </div>
-    </div> -->
 
     <footer>
-        <img src="../images/Logo FCamara.png">
-        <img src="../images/Logo Orange Juice.png">
+        <img id="img1" src="../images/Logo FCamara.png">
+        <img id="img2" src="../images/Logo Orange Juice.png">
     </footer>
+
+    
 
 
     <script src="../js/conteudoTrilhaFTAdm.js"></script>

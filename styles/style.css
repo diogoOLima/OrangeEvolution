@@ -1,11 +1,6 @@
-/* * {
-    outline: 1px solid red;
-} */
-
 :root {
     --green: #00C19C;
 }
-
 
 body{
 font-family: Montserrat;
@@ -203,7 +198,6 @@ nav li {
     border-color: #00C19C;
 }
 
-
 input{
     background: #04030C;
     border-radius: 10px;
@@ -218,9 +212,6 @@ label{
     color: white;
     margin: 5px 0px;
 }
-
-
-
 
 footer{
     display: flex;
@@ -239,11 +230,7 @@ div.aula{
 
 .pendente{
     background-color: #CA1C1C;
-} 
-
-/* .concluido{
-    background-color: blue;
-} */
+}
 
 #barra {
     height: 20px;
@@ -316,8 +303,6 @@ main button {
     padding: 5px;
 }
 
-
-
 #infoProgresso {
     display: flex;
     justify-content: flex-end;
@@ -339,34 +324,12 @@ main button {
     color: white;
 }
 
-
-
 #conteudos > div{
     /* display: flex;
     flex-direction: column;
     align-items: center; 
     margin:20px;*/
     padding: 10px 0px;
-}
-
-#conteudos #colunas {
-    /* display: flex;
-    width: 90%;
-    padding: 20px;
-    justify-content: space-between;
-    box-sizing: border-box;*/
-    
-}
-
-#conteudos #colunas>p{
-   /* width: 25%;
-    text-align: center;*/
-}
-
-
-#conteudos #colunas div {
-    /*display: flex;
-    width: 75%;*/
 }
 
 #conteudos #colunas div p:nth-child(1) {
@@ -397,7 +360,6 @@ main button {
 }
 
 .aula a p{
-    
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -474,6 +436,71 @@ main button {
 a {
     text-decoration: none !important;
 }
+
+.resumo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#legenda > p {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    padding: 0px 5px;
+
+}
+#legenda {
+    justify-content: center;
+    display: flex;
+    padding: 40px 0px !important;
+}
+#legenda > img{
+    height: 2em;
+    width: 0.7em;
+}
+
+@media(max-width: 600px){
+    #img1 {
+        width: 150px;
+    }
+    #img2 {
+        width: 100px;
+    }
+    .img3, .img4 {
+        height: 2em;
+        width: 0.7em;
+    }
+}
+
+@media(max-width: 425px){
+    .img3, .img4 {
+        height: 0.4em;
+        width: 0.4em;
+    }
+    #legenda > p {
+        font-size: 1em;  
+         
+    }
+}
+@media(max-width: 375px){
+    #legenda > p {
+        font-size: 0.8em;   
+    }
+}
+
+@media(max-width: 320px){
+    .img3, .img4 {
+        height: 1.2em;
+        width: 0.4em;
+    }
+    #legenda > p {
+        font-size: 0.6em;   
+    }
+}
+
+
 
 
 
