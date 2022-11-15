@@ -69,7 +69,43 @@ Tendo os conteúdos apresentados da mesma forma que na página de trilhas do est
     - Alternativa de excluir, editar ou inserir novos conteúdos a qualquer momento
 ![tela admin](https://user-images.githubusercontent.com/96957356/201770163-ed1361d1-4fe5-4657-a0f3-72599928c86e.png)
 
+## **Validação ao adicionar novos conteúdos (**IMPORTANTE!**):**
+ - É muito importante que, ao adicionar um novo conteúdo na trilha, a inserção dos dados seja feita de forma correta para que tudo passe na validação do banco de dados e um novo conteúdo seja adicionado com sucesso. 
+ O nome do conteúdo deve possuir mais de 4 letras:
+ ```
+ Ex:
+ Curso X
+```
+O campo link deve ser realmente um link url:
+ ```
+ Ex:
+ https://github.com/
+```
+O campo duração deve obedecer a ordem de número e texto:
+ ```
+ Ex:
+ 17 minutos
+ 1 hora
+```
+O campo origem só precisa ser um texto com mais de 2 caracteres;
+ ```
+ Ex:
+ GIT
+```
+**O campo tipo é muito importante, e para a inserção correta de uma nova aula o campo tipo possui as seguintes opções:**
+ ```
+Artigo FullStack
+Video FullStack
+Curso FullStack
 
+Artigo UX/UI
+Video UX/UI
+Curso UX/UI
+
+Artigo QA
+Video QA
+Curso QA
+```
 
 ## Funcionalidades futuras
 * Futuramente haverá também a opção de editar uma trilha já existente
