@@ -18,6 +18,7 @@ Orange Evolution é a plataforma de estudos em áreas de tecnologia com trilhas 
   * [Páginas de trilha](#Páginas-de-trilha)
   * [Página de trilha administrador](#Página-de-trilha-administrador)
 * [Funcionalidades](#Funcionalidades)
+* [Validação](#Validação)
 * [Funcionalidades futuras](#Funcionalidades-futuras)
 * [Tecnologias utilizadas](#Tecnologias-utilizadas)
 * [Responsividade](#Responsividade)
@@ -69,7 +70,8 @@ Tendo os conteúdos apresentados da mesma forma que na página de trilhas do est
     - Alternativa de excluir, editar ou inserir novos conteúdos a qualquer momento
 ![tela admin](https://user-images.githubusercontent.com/96957356/201770163-ed1361d1-4fe5-4657-a0f3-72599928c86e.png)
 
-## **Validação ao adicionar novos conteúdos (**IMPORTANTE!**):**
+## Validação
+  **Validação ao adicionar novos conteúdos (**IMPORTANTE!**):**
  - É muito importante que, ao adicionar um novo conteúdo na trilha, a inserção dos dados seja feita de forma correta para que tudo passe na validação do banco de dados e um novo conteúdo seja adicionado com sucesso. 
  O nome do conteúdo deve possuir mais de 4 letras:
  ```
