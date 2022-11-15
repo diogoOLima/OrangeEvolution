@@ -40,9 +40,9 @@ function getAulas(){
                                         <div class="col-md-5"><div><small class="text-info">Artigo</small><p>${aula.nome}</p></div></div>
                                         <div class="col-md-2 col-5 mt-4 mb-2 mt-sm-0"><p><small class="d-md-none text-info">Tempo: </small> ${aula.duração}</p></div>
                                         <div class="col-md-2 col-7 mt-4 mb-2 mt-sm-0"><p><font class="d-md-none text-info">Origem: </font>${aula.origem}</p></div>
-                                        <div class="col-md-2"><font class="d-md-none text-info">Status: </font><button id="statusButton${countAulas}" class ="pendente" onclick="altStatusButton(id)">Pendente</button></div>
-                                        <a href="${conteudo.link}" class="col-md-1 d-sm-block" target="_blank">
-                                            <div class="col-md-1  d-sm-block "><i class="fa-solid fa-chevron-right fs-4" ></i></div>
+                                        <div class="col-md-2 col-sm-9 col-9"><font class="d-md-none text-info">Status: </font><button id="statusButton${countAulas}" class ="pendente" onclick="altStatusButton(id)">Pendente</button></div>
+                                        <a href="${conteudo.link}" class="col-md-1 col-sm-3 col-3" target="_blank">
+                                            <div class="col-md-1"><i class="fa-solid fa-chevron-right fs-4" ></i></div>
                                         </a>
                                     </div>
                                 </div>

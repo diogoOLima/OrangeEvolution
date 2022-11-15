@@ -431,6 +431,11 @@ main button {
     width: 150px;
 }
 
+#btnAcessar{
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
 .btn-admin{
     background: transparent;
 }
@@ -485,7 +490,13 @@ a {
     #legenda > p {
         font-size: 1.3em;
         width: 220px;
+        
          
+    }
+    .trilhas {
+        justify-content: center;
+        align-items: center;
+        padding: 500px;
     }
 }
 
