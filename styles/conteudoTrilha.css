@@ -325,6 +325,10 @@ main button {
     color: white;
 }
 
+#conteudos {
+    color: white;
+}
+
 #conteudos > div{
     /* display: flex;
     flex-direction: column;

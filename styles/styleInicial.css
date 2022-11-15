@@ -33,7 +33,7 @@ header{
 }
 
 .iniciais-sair {
-    width: 8em;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -119,6 +119,27 @@ button{
     background: RGB(10,74,154,1);
     border: 2px solid #00C19C;
     border-radius: 10px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F1F1F1;
+}
+
+#btnSair {
+    background: RGB(10,74,154,1);
+    border: 2px solid #00C19C;
+    border-radius: 10px;
+    padding: 0px 20px;
+    margin: 0px 20px;
+    width: unset;
+    height: 50px;
+
+    position: unset;
+    left: 0px;
+    top: 0px;
 
     font-family: 'Montserrat';
     font-style: normal;

@@ -14,7 +14,7 @@ iniciais.innerHTML = `${inicial}`;
 
 var countConcluido = 0;
 let countAulas = 0;
-conteudos.style.color = "white"
+
 
 function getAulas(){
     axios.get(url)
